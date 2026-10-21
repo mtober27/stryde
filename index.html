@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>STRYDE · The performance tee</title>
+  <meta name="description" content="STRYDE is a performance tee knit from lyocell and organic cotton. Drop 01 is four colors: White, Grey, Black, and Dark Green.">
+  <meta name="theme-color" content="#ebe6dc">
+  <link rel="icon" href="images/logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#tee">Skip to the tee</a>
+
+  <header class="nav" id="top">
+    <div class="wrap nav-bar">
+      <a class="brand" href="#top">
+        <img src="images/logo.png" alt="" width="28" height="28">
+        <span>STRYDE</span>
+      </a>
+      <nav class="nav-links" id="site-nav" aria-label="Primary">
+        <a href="#tee">The tee</a>
+        <a href="#materials">Materials</a>
+        <a href="#story">Story</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="btn btn-small" href="#drop">Drop 01</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="kicker">Est. 2026 · Two friends</p>
+          <h1>Performance, <em>knit from plants.</em></h1>
+          <p class="lede">STRYDE is a performance tee in lyocell and organic cotton. Cut for the work and the hours after it. Small runs, plant fiber, color used carefully.</p>
+          <div class="hero-actions">
+            <a class="btn" href="#tee">See the colors</a>
+            <a class="btn btn-ghost" href="#materials">The cloth</a>
+          </div>
+          <ul class="facts">
+            <li>Lyocell</li>
+            <li>Organic cotton</li>
+            <li>No polyester</li>
+            <li>Small batch</li>
+          </ul>
+        </div>
+        <figure class="hero-media" id="hero-media">
+          <img class="hero-shot" src="images/hero.jpg" alt="Dark green STRYDE Performance Tee">
+          <img class="hero-mark" src="images/logo.png" alt="STRYDE logo">
+          <figcaption class="hero-caption">Dark Green</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="band" id="tee">
+      <div class="wrap">
+        <div class="section-intro">
+          <p class="kicker">Performance Tee</p>
+          <h2>Four colors.</h2>
+          <p class="lede">Same cloth in every one. Pick a color, then turn the grid to see the back.</p>
+        </div>
+        <div class="tee-bar">
+          <div>
+            <p class="stage-index" id="stage-index">01</p>
+            <p class="stage-name" id="stage-name">White</p>
+            <p class="stage-note" id="stage-note">Bright, with the name across the chest.</p>
+          </div>
+          <div class="tee-actions">
+            <div class="view-toggle" role="group" aria-label="Shirt view">
+              <button type="button" id="view-front" aria-pressed="true">Front</button>
+              <button type="button" id="view-back" aria-pressed="false">Back</button>
+            </div>
+            <a class="stage-join" id="stage-join" href="#drop">Join in White</a>
+          </div>
+        </div>
+        <p class="sr-only" id="stage-live" aria-live="polite"></p>
+        <fieldset class="swatches">
+              <legend class="sr-only">Choose a Performance Tee color</legend>
+
+              <label class="swatch">
+                <input type="radio" name="dye" value="white" data-index="01" data-name="White" data-note="Bright, with the name across the chest." data-front="images/colors/white-front.jpg" data-back="images/colors/white-back.jpg" checked>
+                <span class="chip"><img src="images/colors/white-front.jpg" alt=""></span>
+                <span class="swatch-meta"><span>01</span><span>White</span></span>
+              </label>
+
+              <label class="swatch">
+                <input type="radio" name="dye" value="grey" data-index="02" data-name="Grey" data-note="A mid grey for every session." data-front="images/colors/grey-front.jpg" data-back="images/colors/grey-back.jpg">
+                <span class="chip"><img src="images/colors/grey-front.jpg" alt=""></span>
+                <span class="swatch-meta"><span>02</span><span>Grey</span></span>
+              </label>
+
+              <label class="swatch">
+                <input type="radio" name="dye" value="black" data-index="03" data-name="Black" data-note="Near-black. The name reads light on the chest." data-front="images/colors/black-front.jpg" data-back="images/colors/black-back.jpg">
+                <span class="chip"><img src="images/colors/black-front.jpg" alt=""></span>
+                <span class="swatch-meta"><span>03</span><span>Black</span></span>
+              </label>
+
+              <label class="swatch">
+                <input type="radio" name="dye" value="green" data-index="04" data-name="Dark Green" data-note="Deep green, closest to the leaf in the mark." data-front="images/colors/green-front.jpg" data-back="images/colors/green-back.jpg">
+                <span class="chip"><img src="images/colors/green-front.jpg" alt=""></span>
+                <span class="swatch-meta"><span>04</span><span>Dark Green</span></span>
+              </label>
+            </fieldset>
+      </div>
+    </section>
+
+    <section class="band band-cream" id="materials">
+      <div class="wrap">
+        <div class="section-intro">
+          <p class="kicker">Materials</p>
+          <h2>The cloth</h2>
+          <p class="lede">A performance knit that starts as wood and cotton. The shirt is cut to be sweated in, washed cold, and kept.</p>
+        </div>
+        <div class="specs">
+          <article>
+            <p class="spec-num">01</p>
+            <h3>Lyocell</h3>
+            <p>Wood pulp, spun in a closed loop. The solvent used to make the fiber is recovered and reused. It breathes, which is what a training shirt needs from the cloth itself.</p>
+          </article>
+          <article>
+            <p class="spec-num">02</p>
+            <h3>Organic cotton</h3>
+            <p>Grown without synthetic pesticides. Blended with the lyocell, it gives the knit enough body to hold its shape after repeated sessions.</p>
+          </article>
+          <article>
+            <p class="spec-num">03</p>
+            <h3>Color, in small lots</h3>
+            <p>Four colors, applied with a low-water process. Short runs mean less leftover dyed cloth waiting in a warehouse.</p>
+          </article>
+        </div>
+        <aside class="callout">
+          <p>Polyester performance shirts shed plastic in the wash. The STRYDE tee is cellulose, from wood and cotton, and it is cut to be worn for years.</p>
+          <ul class="care">
+            <li>Wash cold</li>
+            <li>Hang dry</li>
+            <li>Mend a seam before you replace the shirt</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="band" id="story">
+      <div class="wrap story-grid">
+        <div>
+          <p class="kicker">The company</p>
+          <h2>Two friends, one standard.</h2>
+          <p class="lede">STRYDE started because the performance clothes we could buy were built to be replaced. We wanted a shirt we could train in that was still made from something honest.</p>
+          <p>The name is the step. The work is the cloth: fewer pieces, better fiber, runs small enough that we can stand behind them.</p>
+          <p>The mark is a leaf, leaning forward. Plant fiber, and the stride the clothes are cut for. That is the whole idea.</p>
+        </div>
+        <!-- Founders photo: add images/founders.jpg -->
+        <figure class="founders" hidden>
+          <img src="images/founders.jpg" alt="The two friends behind STRYDE">
+        </figure>
+      </div>
+    </section>
+
+    <section class="band band-ink" id="drop">
+      <div class="wrap drop-grid">
+        <div>
+          <p class="kicker">Drop 01</p>
+          <h2>Be first in line.</h2>
+          <p class="lede">Leave an email and the color you are holding. We write once, when the Performance Tee is ready to order.</p>
+        </div>
+        <div>
+          <form id="drop-form">
+            <label class="field-label" for="email">Email</label>
+            <input class="email-input" id="email" name="email" type="email" inputmode="email" autocomplete="email" required placeholder="you@email.com">
+
+            <fieldset class="size-field">
+              <legend class="field-label">Size <span class="optional">optional</span></legend>
+              <div class="sizes">
+                <label><input type="radio" name="size" value="XS"><span>XS</span></label>
+                <label><input type="radio" name="size" value="S"><span>S</span></label>
+                <label><input type="radio" name="size" value="M"><span>M</span></label>
+                <label><input type="radio" name="size" value="L"><span>L</span></label>
+                <label><input type="radio" name="size" value="XL"><span>XL</span></label>
+              </div>
+            </fieldset>
+
+            <p class="holding" id="holding">Holding a White tee.</p>
+            <button class="btn btn-light" type="submit">Join Drop 01</button>
+            <p class="fine">No charge now. One note when the tee is ready. Nothing else.</p>
+          </form>
+          <div id="drop-success" class="drop-success" hidden>
+            <h3>You're on the list.</h3>
+            <p id="success-copy"></p>
+            <button class="linkish" id="success-reset" type="button">Change the note</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <img class="footer-mark" src="images/logo.png" alt="" width="56" height="56">
+      <p class="footer-brand">STRYDE</p>
+      <p class="footer-tag">A performance tee from plant fiber.</p>
+      <div class="footer-base">
+        <p>© 2026 STRYDE</p>
+        <nav aria-label="Footer">
+          <a href="#tee">The tee</a>
+          <a href="#materials">Materials</a>
+          <a href="#story">Story</a>
+          <a href="#drop">Drop 01</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
